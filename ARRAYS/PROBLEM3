@@ -1,3 +1,6 @@
+//✅ 1.Basic Traversal & Observations
+//Check if the array is sorted
+
 /*
 public static boolean check(int[] nums) {
         int n = nums.length;
