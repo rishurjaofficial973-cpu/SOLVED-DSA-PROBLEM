@@ -1,1 +1,41 @@
+//✅ 1. Basic Traversal & Observations 
+//* Count of Maximum
 
+/*
+
+
+class Solution {
+    public int[] mostFrequent(int[] arr) {
+    
+        
+         
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for(int x : arr){
+            map.put(x, map.getOrDefault(x, 0) + 1);
+        }
+
+        int maxFreq = 0;
+        int value = Integer.MAX_VALUE;
+
+
+        for(Map.Entry<Integer,Integer> entry : map.entrySet()){
+            
+            int element = entry.getKey();
+            int freq = entry.getValue();
+
+            if(freq > maxFreq){
+                maxFreq = freq;
+                value = element;
+            }
+            else if(freq == maxFreq && element < value){
+                value = element;
+            }
+        }
+
+       return new int[]{value, maxFreq};
+    }
+}
+
+
+*/
