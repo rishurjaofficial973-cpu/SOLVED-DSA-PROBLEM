@@ -2,6 +2,67 @@
 //Search an element in an array--------
 
 
+/* Problem Statement Overview
+The core task is quite straightforward: you are given a list (an array) of N numbers, and you are also given a specific target number 
+called X. Your goal is to determine if the target number X exists anywhere within that list.
+
+Example Walkthrough
+Let's look at a concrete example to see how this works:
+
+Sample Input:
+5 3
+7 3 5 2 1
+Step-by-Step Process:
+
+First, we look at the first line of input. It tells us 
+N = 5
+N = 5 (there are 5 numbers in our list) and
+X = 3
+X = 3 (we are looking for the number 3).
+Now, we look through the list provided on the second line: 7, 3, 5, 2, 1.
+We check the first element: Is 
+7
+7 equal to our target 
+3
+3? No.
+We check the second element: Is 
+3
+3 equal to our target 
+3
+3? Yes!
+Since we found the number 
+3
+3 in the list, we can stop searching.
+Expected Output:
+
+YES
+If we were looking for 
+X = 10
+X=10 in that same list, we would check all five numbers, realize 
+10
+10 is not there, and our output would be NO.
+
+Input Format
+The first line contains two space-separated integers:N
+N: The size of the array.
+X: The element you need to search for.
+The second line contains N
+N space-separated integers representing the elements of array A.
+
+Output Format
+Output YES if the element X is present in the array A
+A.
+Otherwise, output NO.
+Constraints
+1 ≤ N ,
+X ≤ 10^5
+1≤N,X≤10^5
+ 
+1 ≤ Ai ≤ 10^5
+1 ≤ Ai ≤ 10^5  (where Ai is any element in the array)
+
+*/
+
 /*
 
 import java.util.*;
