@@ -1,6 +1,121 @@
 //✅ 1.Basic Traversal & Observations
 //Check if the array is sorted
 
+//PROBLEM STATEMENT---
+
+/*
+
+Problem Statement
+You are given an array nums of size N. Determine whether the given array is a non-decreasing sorted array that has been rotated any number of times (including zero).
+An array is considered sorted and rotated if:
+There exists a non-decreasing sorted array A.
+After rotating 
+A by some k positions (k ≥ 0)
+(k≥0), we obtain the given array nums.
+Duplicates are allowed in the array.
+
+What is Rotation?
+Rotation means moving a suffix of the array to the front while maintaining the order of elements.
+Example:
+Original Sorted Array
+1 2 3 4 5
+After rotating by 4 positions
+2 3 4 5 1
+Both arrays represent a sorted and rotated array.
+
+Mathematical Definition
+If A is the original sorted array and it is rotated right by k positions, the resulting array B satisfies:
+B[(i + k) mod A.length] = A[i]
+for every valid index i.
+
+Function Declaration
+
+Function Name
+check
+
+Description
+This function checks whether a given array nums is a non-decreasing sorted array that has been rotated any number of times (including zero rotations).
+Parameters
+nums : reference to a vector/array of integers
+Represents the given array.
+Return Value
+The function should return:
+true  → if nums can be obtained by rotating a non-decreasing sorted array
+false → otherwise
+
+Constraints
+1 ≤ nums.length ≤ 100
+1 ≤ nums[i] ≤ 100
+
+Input Format
+The first line contains an integer T — number of test cases.
+For each test case:
+The first line contains an integer N — size of the array.
+The second line contains N space-separated integers — elements of the array nums.
+
+Output Format
+For each test case, print:
+true
+if the array is sorted and rotated, otherwise print
+false
+Each result should be printed on a new line.
+
+Sample Test Cases
+
+Sample 1
+Input
+1
+7
+6 7 1 2 3 4 5
+
+Output
+true
+
+Explanation
+Original sorted array:
+1 2 3 4 5 6 7
+After rotating by k = 2 positions
+6 7 1 2 3 4 5
+Hence the array is sorted and rotated.
+
+Sample 2
+
+Input
+1
+5
+68 97 10 21 45
+
+Output
+true
+
+Explanation
+Original sorted array:
+10 21 45 68 97
+After rotating by k = 2
+68 97 10 21 45
+Hence the array is sorted and rotated.
+
+Sample 3
+
+Input
+1
+5
+4 5 2 3 1
+
+Output
+false
+
+Explanation
+No rotation of any sorted array can produce the order:
+4 5 2 3 1
+Therefore, the array is not sorted and rotated.
+
+
+*/
+
+
+//SOLUTION----
+
 /*
 
   public static boolean check(int[] nums) {
