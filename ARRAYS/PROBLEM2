@@ -1,6 +1,47 @@
 //✅ 1.Basic Traversal & Observations
 //Find maximum in an Array
 
+
+//PROBLEM STATEMENT-----
+/*
+
+
+Problem Statement
+You are given the heights of N mountains. Your task is to determine the height of the tallest mountain.
+For each test case, print the maximum height among the given mountain heights.
+
+Input Format
+The first line contains an integer T, representing the number of test cases.
+For each test case:
+The first line contains an integer N, representing the number of mountains.
+The second line contains N space-separated integers, representing the height of each mountain.
+
+Output Format
+For each test case, print one integer on a new line representing the height of the tallest mountain.
+Constraints
+1 ≤ T ≤ 10
+1 ≤ T ≤ 10
+1
+≤
+N
+≤
+100000
+1≤N≤100000
+0 ≤ height of each mountain ≤ 10^9
+0 ≤ height of each mountain≤10^9
+ 
+Sample Input
+1
+5
+4 7 6 3 1
+
+Sample Output
+7
+*/
+
+
+
+SOLUTION--------
 /*
 
 import java.util.*;
