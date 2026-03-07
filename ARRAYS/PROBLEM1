@@ -1,8 +1,10 @@
 //✅ 1. Basic Traversal & Observations (foundation first)
 //Search an element in an array--------
 
+//PROBLEM STATEMENT ---------
 
-/* Problem Statement Overview
+/* 
+Problem Statement Overview
 The core task is quite straightforward: you are given a list (an array) of N numbers, and you are also given a specific target number 
 called X. Your goal is to determine if the target number X exists anywhere within that list.
 
@@ -62,6 +64,8 @@ X ≤ 10^5
 1 ≤ Ai ≤ 10^5  (where Ai is any element in the array)
 
 */
+
+
 
 /*
 
