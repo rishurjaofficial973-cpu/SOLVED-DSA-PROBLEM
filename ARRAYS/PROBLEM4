@@ -2,6 +2,68 @@
 // Largest and Second Largest
 
 
+//PROBLEM STATEMENT-------
+
+/*
+
+
+Problem
+You are given an array A containing N integers.
+Find the maximum sum of two distinct integers present in the array.
+Note: It is guaranteed that there are at least two different integers in the array.
+
+Input
+The first line contains an integer T — number of test cases.
+For each test case:
+The first line contains N — size of the array.
+The second line contains N space-separated integers representing the array.
+Output
+For each test case, print the maximum sum of two distinct integers in the array.
+Constraints
+1 ≤ T ≤ 1000
+2 ≤ N ≤ 100000
+1 ≤ A[i] ≤ 1000
+Total N across all test cases ≤ 2 × 100000
+Sample Input
+4
+3
+4 1 6
+7
+3 7 2 1 1 5 3
+5
+8 2 9 4 9
+2
+1 2
+Sample Output
+10
+12
+17
+3
+Explanation
+Test Case 1
+Array: 4 1 6
+Largest two distinct numbers: 6 and 4
+Maximum sum = 10
+Test Case 2
+Array: 3 7 2 1 1 5 3
+Largest two distinct numbers: 7 and 5
+Maximum sum = 12
+
+Test Case 3
+Array: 8 2 9 4 9
+Largest two distinct numbers: 9 and 8
+Maximum sum = 17
+
+Test Case 4
+Array: 1 2
+Largest two distinct numbers: 2 and 1
+Maximum sum = 3
+
+*/
+
+
+//SOLUTION---
+
 /*
 import java.util.Scanner;
 
