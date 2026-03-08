@@ -1,6 +1,76 @@
 //✅ 1. Basic Traversal & Observations (
 //* MIN To MAX
 
+//PROBLEM STATEMENT------
+
+/*
+MIN To MAX
+Problem
+You are given an array A of size N.
+Let M be the minimum value present in the array initially.
+
+In one operation, you can:
+
+Choose an index i (1 ≤ i ≤ N)
+Choose an integer X (1 ≤ X ≤ 100)
+Set A[i] = X
+Your task is to determine the minimum number of operations required to make M the maximum value in the array.
+Input Format
+The first line contains an integer T — number of test cases.
+For each test case:
+The first line contains an integer N — size of the array.
+The second line contains N space-separated integers representing the array A.
+Output Format
+For each test case, print the minimum number of operations required.
+Constraints
+1 ≤ T ≤ 100
+1 ≤ N ≤ 100
+1 ≤ A[i] ≤ 100
+Sample Input
+3
+2
+1 2
+4
+2 2 3 4
+1
+1
+Sample Output
+1
+2
+0
+Explanation
+Test Case 1
+Array: 1 2
+Minimum value M = 1
+
+Operation:
+
+Change 2 → 1
+Final array:
+1 1
+Operations required = 1
+Test Case 2
+Array: 2 2 3 4
+Minimum value M = 2
+
+Operations:
+
+Change 4 → 2
+Change 3 → 2
+Final array:
+2 2 2 2
+Operations required = 2
+Test Case 3
+Array: 1
+Minimum value M = 1
+
+Since the array already contains only 1, it is already the maximum.
+
+Operations required = 0
+
+
+
+
 /*
 class Solution {
     public int countNonMinimum(int[] nums) {
