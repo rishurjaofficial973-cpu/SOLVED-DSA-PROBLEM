@@ -39,37 +39,36 @@ Sample Output
 2
 0
 Explanation
+
 Test Case 1
 Array: 1 2
 Minimum value M = 1
-
 Operation:
-
 Change 2 → 1
 Final array:
 1 1
 Operations required = 1
+
 Test Case 2
 Array: 2 2 3 4
 Minimum value M = 2
-
 Operations:
-
 Change 4 → 2
 Change 3 → 2
 Final array:
 2 2 2 2
 Operations required = 2
+
 Test Case 3
 Array: 1
 Minimum value M = 1
-
 Since the array already contains only 1, it is already the maximum.
-
 Operations required = 0
 
+*/
 
 
+//SOLUTION-----
 
 /*
 class Solution {
