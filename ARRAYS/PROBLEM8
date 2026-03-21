@@ -1,1 +1,74 @@
 
+Running Comparison
+
+Problem
+Alice and Bob ran for N days.
+On the i-th day:
+Alice ran A[i] meters
+Bob ran B[i] meters
+
+On each day:
+Alice is unhappy if Bob ran strictly more than twice her distance.
+Otherwise, Alice is happy.
+Bob is unhappy if Alice ran strictly more than twice his distance.
+Otherwise, Bob is happy.
+Your task is to find how many days both Alice and Bob were happy.
+
+Input Format
+The first line contains an integer T — number of test cases.
+For each test case:
+First line contains N — number of days.
+Second line contains N space-separated integers — array A (Alice’s distances).
+Third line contains N space-separated integers — array B (Bob’s distances).
+
+Output Format
+For each test case, print a single integer —
+the number of days when both Alice and Bob were happy.
+
+Constraints
+1 ≤ T ≤ 1000
+1 ≤ N ≤ 100
+1 ≤ A[i], B[i] ≤ 100000
+
+Sample Input
+4
+3
+100 200 300
+300 200 100
+4
+1000 1000 1000 1000
+400 500 600 1200
+4
+800 399 1400 532
+2053 2300 3400 23
+5
+800 850 900 950 1000
+600 800 1000 1200 1400
+
+Sample Output
+1
+3
+0
+5
+
+Explanation
+
+Test Case 1
+Day 1: Bob > 2 × Alice → Alice unhappy
+Day 2: Both happy
+Day 3: Alice > 2 × Bob → Bob unhappy
+Only 1 day where both are happy.
+
+Test Case 2
+Alice is happy on all days
+Bob is unhappy on Day 1 only
+Both are happy on 3 days.
+
+Test Case 3
+Alice unhappy on days 1, 2, 3
+Bob unhappy on day 4
+No day where both are happy → 0
+
+Test Case 4
+Neither exceeds twice the other on any day
+Both are happy on all 5 days
